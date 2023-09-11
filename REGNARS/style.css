@@ -1,0 +1,130 @@
+*{
+    padding:0;
+    margin:0;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.main{
+    background-color: #191c18;
+    width:100vw;
+    height:100vh;
+}
+.background{
+    background-color: #00000063;
+    width:100vw;
+    height:100vh;
+    z-index:2;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.errorBox{
+    z-index: 3;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:300px;
+    height:100px;
+    background-color: #313C2E;
+    text-align: center;
+}
+.content{
+    width:60%;
+    height:60%;
+    background-color: #313C2E;
+    border-radius:10px;
+    max-width:500px;
+    min-width:300px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 8px 24px;
+    z-index: 1;
+}
+.guess{
+    position:absolute;
+    background-color: #313C2E;
+    height:550px;
+    width:80%;
+    max-width: 500px;
+    border-radius: 10px;
+    display:hidden;
+    box-shadow: rgb(0 0 0 / 35%) 0px 8px 24px;
+}
+.close{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: #ff0000;
+    height: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.flex{
+    display:flex;
+}
+.none{
+    display:none;
+}
+.flex-down{
+    flex-direction: column;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-evenly{
+    justify-content: space-evenly;
+}
+.align-center{
+    align-items: center;
+}
+.width315px{
+    width:315px;
+}
+.submit{
+    height:50px;
+    width:100px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight: bold;
+    background-color: #191c18;
+    color:white;
+    margin-top:75px;
+}
+.close{
+    position:absolute;
+    right:10px;
+    top:10px
+}
+input{
+    background-color:transparent;
+    border:none;
+    border-bottom:solid #191c18 3px;
+    outline:none;
+    margin-top:5px;
+    width: 250px;
+    margin-top:35px;
+    height:40px;
+    font-size:35px;
+}
+label{
+    font-size:50px;
+    font-weight: bold;
+    margin-bottom:5px;
+    text-align: center;
+}
+p{
+    font-size:12px;
+    margin-top:10px;
+}
+h1,h2{
+    color:white;
+    text-align:center ;
+}
+h1{
+    font-size:50px;
+}
+.top7px{
+    top:-7px;
+}

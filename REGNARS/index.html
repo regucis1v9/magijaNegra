@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main flex justify-center align-center">
+        <form class="content flex flex-down justify-evenly align-center" id="inputs">
+            <div class="flex flex-down align-center justify-center">
+                <label for="">Tavs vārds</label>
+                <input type="text" id ="vards">
+                <p id="vardsError"></p>
+            </div>
+            <div class="flex flex-down align-center justify-center">
+                <label for="">Tavs uzvārds</label>
+                <input type="text" id ="uzvards">
+                <p id="uzvardsError"></p>
+            </div>
+            <button class="submit" onclick="submitName()">Submit</button>
+        </form>
+        <div class="guess none align-center justify-evenly flex-down" id="guess">
+            <button class="close" onclick="closeGuess()">X</button>
+            <h1>Tevi sauc:</h1>
+            <h2 id="guessText"></h2>
+        </div>
+    </div>
+    <div class="background none" id="background"></div>
+    <div class="errorBox none justify-center align-center flex" id="errorBox">
+        <div class="errorText" id="errorText"></div>
+        <button class="close top7px" onclick="closeError()">x</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

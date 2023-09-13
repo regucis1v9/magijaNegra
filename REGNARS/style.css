@@ -100,7 +100,7 @@
 input{
     background-color:transparent;
     border:none;
-    border-bottom:solid #191c18 3px;
+    border-bottom:solid #191c18da 3px;
     outline:none;
     margin-top:5px;
     width: 250px;

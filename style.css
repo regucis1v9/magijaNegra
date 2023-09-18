@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Sofia+Sans:wght@600&display=swap');
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.main{
+    width:100vw;
+    min-height:100vh;
+    background-color:#0b1414;
+}
+.header{
+    width:100vw;
+    height:10vh;
+    background-color:#6eaaa5;
+    border-bottom:solid black 2px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.pageTitle{
+    font-size: calc(3vw + 20px);
+    font-weight: bold;
+    color:#0b1414
+}
+.box{
+    width:100%;
+    max-width: 800px;
+    min-width: 300px;;
+    height:400px;
+    background-color: #1c302f;
+    border-radius: 10px;
+    margin-top:50px;
+    margin-bottom:15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+    border: solid black 2px;
+    text-decoration: none;
+}
+.cases{
+    width:100%;
+    max-width: 800px;
+    min-width: 300px;;
+    height:400px;
+    background-color: #1c302f;
+    border-radius: 10px;
+    margin-top:50px;
+    margin-bottom:15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+    border: solid black 2px;
+    text-decoration: none;
+}
+#cases{
+    background-image: url("cases.jpg"); 
+}
+#characters{
+    background-image: url("characters.jpg");
+}
+#players{
+    background-image: url("players.jpg");
+}
+#one{
+    background-image: url("murder.jpg");
+}
+#two{
+    background-image:url("robbery.jpg");
+}
+#solved{
+    background-image:url("solved.jpg");
+}
+#unsolved{
+    background-image:url("unsolved.jpg");
+}
+#all{
+    background-image:url("all.jpg");
+}
+.caseHeader{
+    width:80%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+    flex-wrap:wrap
+}
+.Container{
+    width:80%;
+    height:100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    align-items: stretch;
+    margin-top:50px;
+}
+.caseTitle{
+    color:#f9fbf9;
+    font-size:30px;
+    width:100%;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+.caseDesc{
+    font-size:20px;
+    margin-top:50px;
+    text-align: left;
+    padding-left:10px;
+    height:50px;
+    line-height:25px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    text-align: center;
+}.caseDates{
+    height:25px;
+    line-height:25px;
+    font-size:20px;
+
+}
+.caseDiff, .caseDesc, .caseDates, .caseStatus{
+    color:#f9fbf9a9;
+    text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+    font-size:20px;
+}
+.marginTop10px{
+    margin-top:10px;
+}
+.content{
+    min-height:90vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:-2px
+}
+.filters{
+    height:100vh;
+    width:80%;
+    max-width:300px;
+    position: absolute;
+    right:0;
+    background-color: #f9fbf9;
+    z-index:3;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h1{
+    color:#f9fbf9;
+    margin-top:100px;
+    font-size:50px;
+}
+button{
+    border:none;
+    cursor:pointer;
+}
+.filterButton{
+    position: absolute;
+    top:2vh;
+    right:10px;
+    height:6vh;
+    width:60px;
+    background-color: #f9fbf9;
+    color:white;
+    font-size:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.filterIcon{
+    height:40px
+}
+.overlay{
+        background-color: #00000063;
+        width:100vw;
+        height:100vh;
+        z-index:2;
+        position: absolute;
+        top:0;
+        left:0;
+}
+.none{
+    display:none;
+}
+.blackBorderTop{
+    border-top:solid black 2px;
+}
+.closeFilters{
+    height:75px;
+    background-color: #1c302f;
+    color:#f9fbf9;
+    font-weight: bold;
+    font-size:30px
+}
+.filtersTitle{
+    color:#040604;
+    text-align: center;
+    margin-top:10px;
+    height:130px;
+}
+.filterSection{
+    display:flex;
+    flex-direction: column;
+}
+.filterOption{
+    text-align: left;
+    padding:10px;
+    background-color: #6eaaa5;
+    font-size:20px;
+}
+.solvedState{
+    height:80px;
+}
+.option{
+    padding:10px;
+}
+h2{
+    font-size:40px;
+    color:#f9fbf9;
+    font-weight: bold; /* Optionally make the text bold */
+    text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+    text-align: center;
+    width:100%;
+}
+.searchBox{
+    margin-top:50px;
+    border:none;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    outline:none;
+    height:50px;
+    width:300px;
+    font-size:35px;
+    color:#1c302f;
+}
+.searchBar{
+    display:flex;
+    align-items: end;
+    flex-direction: row;
+    max-width:300px;
+}
+.searchButton{
+    width:50px;
+    height:50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #6eaaa5;
+}
+img{
+    height:40px;
+}
+.homeButton{
+    position: absolute;
+    top:2vh;
+    left:10px;
+    height:6vh;
+    width:60px;
+    background-color: #1c302f;
+    color:white;
+    font-size:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.caseSection{
+    width:80%;
+    height:500px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+.interactNPC{
+    width: 80%;
+    min-width:300px;
+    height:70%;
+    position: absolute;
+    background-color: #f9fbf9;
+}
+.itemDesc{
+    color:#f9fbf9a9;
+    text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+    font-size:20px;
+    text-align: center;
+    padding:10px;
+}
+
